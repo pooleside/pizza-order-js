@@ -9,3 +9,15 @@ describe('topping', function() {
     expect(topping("onions", 1)).to.contain("onions");
   });
 });
+
+describe('topping', function() {
+  it("returns topping name", function() {
+    expect(topping("onions", 1)).to.not.contain("sausage");
+  });
+});
+
+describe('addTopping', function() {
+  it("returns pizza size, base price, topping name and topping price", function() {
+    expect(addTopping("medium", 10, "cheese", 1)).to.contain("medium,10,cheese,1");
+  });
+})
