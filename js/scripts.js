@@ -1,3 +1,9 @@
+function startOrder(){
+  var myOrder = new Order(0);
+  alert ("you created an order of " + myOrder.totalPrice);
+}
+
+
 function Pizza (size, price){
   this.size = size;
   this.price = price;
@@ -47,3 +53,5 @@ var order = function (totalPrice) {
   returnString = "  " + yourOrder.totalPrice;
   return returnString;
 }
+
+window.unload = myFunction();
