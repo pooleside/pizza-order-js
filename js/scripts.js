@@ -36,3 +36,14 @@ var addTopping = function (size, price, toppingName, toppingPrice) {
   var returnString = tempPizza.size + "," + tempPizza.price + "," + tempPizza.toppings[0].name + "," + tempPizza.toppings[0].price;
     return returnString;
 }
+function Order(totalPrice) {
+  this.totalPrice = totalPrice;
+  this.pizzaList = [];
+}
+
+var order = function (totalPrice) {
+  var yourOrder = new Order (totalPrice);
+  var returnString = "";
+  returnString = "  " + yourOrder.totalPrice;
+  return returnString;
+}
