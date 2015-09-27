@@ -21,3 +21,9 @@ describe('addTopping', function() {
     expect(addTopping("medium", 10, "cheese", 1)).to.contain("medium,10,cheese,1");
   });
 })
+
+describe('order', function() {
+  it("returns pizza total price", function() {
+    expect(order(11)).to.contain(11);
+  });
+})
