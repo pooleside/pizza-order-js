@@ -1,8 +1,8 @@
-function startOrder(){
-  var myOrder = new Order(0);
-  alert ("you created an order of " + myOrder.totalPrice);
-}
 
+  function startOrder(){
+    var myOrder = new Order(0);
+      alert("Your order cost" + myOrder.totalPrice);
+  }
 
 function Pizza (size, price){
   this.size = size;
@@ -54,4 +54,23 @@ var order = function (totalPrice) {
   return returnString;
 }
 
-window.unload = myFunction();
+
+$(document).ready(function() {
+  $("#add-topping").click(function() {
+    var inputtedTopping = $("#topping").val();
+    $("#div-topping-list").append("<div>"  + inputtedTopping  + "</div>");
+
+  });
+
+  $("#add-pizza").click(function() {
+    var inputtedPizza = $("#new-pizza").val();
+    $("#div-pizza-list").append("<div>"  + inputtedPizza  + "</div>");
+
+  });
+
+    $("form#new-order").submit(function(event) {
+        event.preventDefault();
+        startOrder();
+
+      });
+  });

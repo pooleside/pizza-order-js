@@ -12,7 +12,9 @@
     <div class="container">
       <h3>Left Coast Pizza Co.</h3>
       <h4>The best pizza on the west coast</h4>
-
+      <row class="col-md-2.5">
+            <img src="pizza.png" alt="pizza slice">
+          </row>
 
 
         <h4>Order your pizza:</h4>
@@ -20,25 +22,35 @@
           <div class="form-group">
               <label for="new-pizza">Select a size: </label>
               <select name="select" id="new-pizza">
-                <option value="small">small-cheese $8.00</option>
-                <option value="medium">medium-cheese $10.00</option>
-                <option value="large">large-cheese $12.00</option>
+                <option value="small-8.00">small-cheese $8.00</option>
+                <option value="medium-10.00">medium-cheese $10.00</option>
+                <option value="large-12.00">large-cheese $12.00</option>
               </select>
+              <button id="add-pizza">Add</button>
+              <div id = "div-pizza-list">
+
           </div>
 
           <div class="form-group">
             <label for="topping">Choose your toppings:</label>
             <select name="select" id="topping">
-              <option value="pineapple">pineapple-$1.00</option>
-              <option value="pepperoni">pepperoni-$1.00</option>
-              <option value="olives">olives-$1.00</option>
-              <option value="mushrooms">mushrooms-$1.00</option>
-              <option value="sausage">sausage-$1.00</option>
-              <option value="onions">onions-$1.00</option>
+              <option value="pineapple-1.00">pineapple-$1.00</option>
+              <option value="pepperoni-1.00">pepperoni-$1.00</option>
+              <option value="olives-1.00">olives-$1.00</option>
+              <option value="mushrooms-1.00">mushrooms-$1.00</option>
+              <option value="sausage-1.00">sausage-$1.00</option>
+              <option value="onions-1.00">onions-$1.00</option>
 
             </select>
+            <button id="add-topping">Add</button>
+            <div id = "div-topping-list">
+            </div>
+
+
           </div>
-          <button type="submit" class="btn btn-primary">Total</button>
+          <button id="add-to-order">Add to order</button>
+          <div id = "div-topping-list">
+          <button type="submit" name="subbutton" class="btn btn-primary" value="submit">Total</button>
           </div>
 
         </form>
